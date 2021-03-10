@@ -8,7 +8,7 @@ import colors from '../config/colors';
 function WelcomeScreen({ navigation }) {
     
     return (
-        <SafeAreaView style={styles.redContainer}>
+        <SafeAreaView style={styles.redBackground}>
             <Image source={require("../assets/logo.png")} style={{height: 100, width:100}} />
             <Text style={styles.slogan}>Duckopoly</Text>
             <TouchableOpacity style={styles.whiteButton} onPress={() => navigation.navigate('Returning Player')}>

@@ -8,7 +8,7 @@ import colors from '../config/colors';
 function ReturningPlayer({ navigation }) {
     
     return (
-        <SafeAreaView style={styles.redContainer}>
+        <SafeAreaView style={styles.redBackground}>
             <Image source={require("../assets/logo.png")} style={{height: 100, width:100}} />
             <Text style={styles.slogan}>Welcome Back!</Text>
             <Text style={{textAlign:"center", color: colors.white, fontSize:25}}>Enter your player ID...</Text>

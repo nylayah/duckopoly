@@ -10,7 +10,7 @@ const styles= StyleSheet.create({
         backgroundColor:colors.red,
         alignItems: "center",
         justifyContent:"center",
-        padding: 10,
+        padding: 15,
     },
     grayButton: {
         width: '80%',
@@ -76,167 +76,18 @@ const styles= StyleSheet.create({
         padding: 7,
         margin:40,
     },
-    redContainer: {
-        backgroundColor:colors.red, 
-        flex:1, 
-        alignItems:"center", 
-        justifyContent:"center", 
+    Square: {   
         padding:10,
-    },
-    whiteContainer: {
-        backgroundColor:colors.white, 
-        flex:1, 
-        //alignItems:"center", 
-       // justifyContent:"center", 
-        padding:10,
-    },
-    grayContainer: {
-        backgroundColor:colors.red, 
-        flex:1, 
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-    },
-    blueContainer: {
-        backgroundColor:colors.red, 
-        flex:1, 
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-    },
-    redSquare: {
-        backgroundColor:colors.red,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
         borderColor: colors.black,
-        borderWidth:1,
+        borderWidth:1, 
+        flexWrap: "wrap",
+    },
+    boardText: {
+        fontSize: 12,
+        color: colors.black,
+        textAlign:"center",
         
     },
-    orangeSquare: {
-        backgroundColor:colors.orange,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    yellowSquare: {
-        backgroundColor:colors.yellow,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    greenSquare: {
-        backgroundColor:colors.green,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    lightBlueSquare: {
-        backgroundColor:colors.lightblue,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    darkBlueSquare: {
-        backgroundColor:colors.darkblue,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    brownSquare: {
-        backgroundColor:colors.brown,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    purpleSquare: {
-        backgroundColor:colors.purple,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    cornerSquare: {
-        backgroundColor:colors.gray,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    chanceSquare: {
-        backgroundColor:colors.white,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    railRoadSquare: {
-        backgroundColor:colors.white,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-    utilitySquare: {
-        backgroundColor:colors.gray,  
-        alignItems:"center", 
-        justifyContent:"center", 
-        padding:10,
-        height:"100%",
-        width:"10%",
-        borderColor: colors.black,
-        borderWidth:1,
-        
-    },
-
     
 })
 export {styles,colors}

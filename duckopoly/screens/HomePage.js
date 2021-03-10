@@ -8,7 +8,7 @@ import colors from '../config/colors';
 function HomePage({ navigation }) {
     
     return (
-        <SafeAreaView style={styles.redContainer}>
+        <SafeAreaView style={styles.redBackground}>
             <TouchableOpacity style={styles.whiteButton} onPress={() => navigation.navigate('Games List')}>
                 <Text style={styles.redText}>Load Game</Text>
             </TouchableOpacity>

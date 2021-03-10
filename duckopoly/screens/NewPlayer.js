@@ -8,7 +8,7 @@ import colors from '../config/colors';
 function NewPlayer({ navigation }) {
     
     return (
-        <SafeAreaView style={styles.redContainer}>
+        <SafeAreaView style={styles.redBackground}>
             <Image source={require("../assets/logo.png")} style={{height: 100, width:100}} />
             <Text style={styles.slogan}>Welcome to Duckopoly!</Text>
             <Text style={{textAlign:"center", color: colors.white, fontSize:25}}>Choose your player ID...</Text>
