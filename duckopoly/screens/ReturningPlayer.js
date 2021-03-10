@@ -15,7 +15,6 @@ function ReturningPlayer({ navigation }) {
             <TextInput 
                 style={styles.textInputPlayerID} 
                 placeholder="player id"
-                onChangeText={handleChange('username')}
                 ></TextInput>
             <TouchableOpacity style={styles.whiteButton} onPress={() => navigation.navigate('Home')}>
                 <Text style={styles.redText}>Enter Game</Text>
