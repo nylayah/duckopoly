@@ -5,7 +5,10 @@ import colors from '../config/colors';
 
 
 
+
 function GameBoard({ navigation }) {
+    
+
     return (
         <SafeAreaView style={styles.redBackground}>
             <View style={{backgroundColor:colors.red, flex:1/15, flexDirection:"row", width:'100%', alignSelft:"flex-start", padding:"2%"}}>
@@ -88,7 +91,9 @@ function GameBoard({ navigation }) {
                         <Text style={styles.yellowText}>options</Text> 
                     </TouchableOpacity> 
             </View>
-        </SafeAreaView>);
+        </SafeAreaView>
+        
+        );
 
 }
 
