@@ -51,11 +51,11 @@ function GameBoard({ navigation }) {
                         <View style={{padding:".5%", flex:1/3, flexWrap: "wrap"}}>
                             <Text style={{color: colors.lightblue, fontSize:20, textAlign:"left", textAlignVertical:"center", transform: [{ rotate: "0deg" }]}}>CHANCE</Text>
                         </View>
-                        <View style={{padding:".5%", flex:1/3, flexWrap: "wrap"}}>
+                        <View style={{padding:".5%", flex:1/3, flexWrap: "wrap", borderWidth: 2, alignSelf: 'center', justifyContent: 'center'}}>
                             <Text style={{color: colors.red, fontSize:40, textAlign:"center", textAlignVertical:"center", transform: [{ rotate: "0deg" }]}}>DUCKOPOLY</Text>
                         </View>
-                        <View style={{ flex:1/3,  padding:".5%", flexWrap: "wrap"}}>
-                            <Text style={{color: colors.yellow, fontSize:20, textAlign:"right",  transform: [{ rotate: "0deg" }]}}>COMMUNITY CHEST</Text>
+                        <View style={{ flex:1/3,  padding:".5%", borderWidth: 2, alignSelf: 'center', justifyContent: 'center'}}>
+                            <Text style={{color: colors.yellow, fontSize:20, textAlign:"center",  transform: [{ rotate: "0deg" }]}}>COMMUNITY CHEST</Text>
                         </View>
                     </View>
                     <View style={{flexDirection:"column", flex:1/9, height:"100%"}}>
