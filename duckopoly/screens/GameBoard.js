@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, View, Image, Alert, SafeAreaView, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+import { View, SafeAreaView, Text, TouchableOpacity } from 'react-native';
 import { styles } from '../config/styles';
 import colors from '../config/colors';
 
@@ -21,30 +21,30 @@ function GameBoard({ navigation }) {
             </View>
             <View style={{flex:13/15, flexDirection:"column", width:'100%', padding:"2%"}}>
                 <View style={{flexDirection:"row", flex:1/10, width:"100%"}}>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.red, borderWidth:1}}>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.red, borderWidth:1}]}>
                         <Text style={styles.boardText}>GO DUCKS</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.brown, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.brown, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.lightblue, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.lightblue, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.brown, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.brown, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.lightblue, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.lightblue, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
                    
                 </View>
                 <View style={{flexDirection:"row", flex:8/10, backgroundColor:colors.green}}>
                     <View style={{flexDirection:"column", flex:1/9, backgroundColor: colors.orange, justifyContent:"flex-start"}}>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.purple, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.purple, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.purple, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.orange, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.orange, borderWidth:1}}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.purple, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.purple, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.purple, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.orange, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.orange, borderWidth:1}]}></TouchableOpacity>
                     
                     </View>
                     <View style={{backgroundColor: colors.gray, flex:7/9,borderWidth:1,borderColor:colors.black, padding:"5%"}}>
@@ -59,27 +59,27 @@ function GameBoard({ navigation }) {
                         </View>
                     </View>
                     <View style={{flexDirection:"column", flex:1/9, height:"100%"}}>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.red, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.red, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.yellow, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.yellow, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/8, backgroundColor: colors.yellow, borderWidth:1}}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.red, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.red, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.yellow, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.yellow, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/8, backgroundColor: colors.yellow, borderWidth:1}]}></TouchableOpacity>
                     </View>
                 </View>
                 <View style={{flexDirection:"row", flex:1/10, width:"100%"}}>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.darkblue, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.darkblue, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.green, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.green, borderWidth:1}}></TouchableOpacity>
-                    <TouchableOpacity style={styles.Square} style={{flex:1/10, backgroundColor: colors.white, borderWidth:1}}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.darkblue, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.darkblue, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.green, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.green, borderWidth:1}]}></TouchableOpacity>
+                    <TouchableOpacity style={[styles.Square, {flex:1/10, backgroundColor: colors.white, borderWidth:1}]}></TouchableOpacity>
                    
                 </View>
 
